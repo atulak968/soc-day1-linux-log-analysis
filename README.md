@@ -135,6 +135,21 @@ python3 log_analyzer.py
 
 ---
 
+
+---
+
+## 🚀  “Incident Report” (MOST POWERFUL 🔥)
+
+👉 Ye add karte hi tum **SOC candidate lagoge**
+
+```markdown
+## 🚨 Incident Report
+
+- Attack Type: Brute Force Attack  
+- Source IP: 192.168.1.10  
+- Attempts: 3  
+- Target Accounts: root, admin  
+- Severity: Medium  
 ## 📊 Output Example
 
 ```
