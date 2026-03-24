@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-🛡️ Day 1 – Linux Authentication Log Analysis
-
-📌 Objective:This project focuses on analyzing Linux authentication logs to detect brute-force login attempts and identify suspicious IP addresses using both manual investigation and Python automation.
-
-🧠 Skills Learned:
-Log analysis (Linux auth logs)
-Brute force attack detection
-Command line tools (grep, awk, sort, uniq)
-Python log parsing
-SOC investigation mindset
-
-📂 Log Sample:
-=======
 # 🛡️ SOC Day 1 – Linux Log Analysis (Brute Force Detection)
 
 ## 📌 Project Overview
@@ -63,28 +49,11 @@ soc-day1-linux-log-analysis/
 ## 📄 Log Sample
 
 ```
->>>>>>> 594689dd3fb1539470f41bb2b38fcaf791e012d6
 Mar 24 10:01:23 server sshd[1234]: Failed password for root from 192.168.1.10 port 22 ssh2
 Mar 24 10:01:25 server sshd[1235]: Failed password for admin from 192.168.1.10 port 22 ssh2
 Mar 24 10:01:30 server sshd[1236]: Failed password for root from 192.168.1.11 port 22 ssh2
 Mar 24 10:01:35 server sshd[1237]: Accepted password for user from 192.168.1.12 port 22 ssh2
 Mar 24 10:01:40 server sshd[1238]: Failed password for root from 192.168.1.10 port 22 ssh2
-<<<<<<< HEAD
-
-🔍 Manual Analysis
-Identified repeated failed login attempts
-Detected suspicious IP: 192.168.1.10
-Total attempts: 3
-Attack type: Brute Force
-
-Command Line Analysis:
-grep "Failed password" auth.log
-grep "Failed password" auth.log | awk '{print $(NF-3)}'
-grep "Failed password" auth.log | awk '{print $(NF-3)}' | sort | uniq -c
-
-
-Python Automation:
-=======
 ```
 
 ---
@@ -130,7 +99,6 @@ grep "Failed password" auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort 
 ## 🧑‍💻 Python Automation
 
 ```python
->>>>>>> 594689dd3fb1539470f41bb2b38fcaf791e012d6
 import re
 from collections import defaultdict
 
@@ -145,24 +113,6 @@ with open(log_file, "r") as file:
                 ip = ip_match.group(1)
                 failed_attempts[ip] += 1
 
-<<<<<<< HEAD
-for ip, count in failed_attempts.items():
-    print(f"{ip} → {count}")
-
-
-
-🚨 Incident Report
-Attack Type: Brute Force
-Source IP: 192.168.1.10
-Attempts: 3
-Target Accounts: root, admin
-Severity: Medium
-
-🎯 Conclusion
-
-This project demonstrates how SOC analysts detect brute-force attacks using log analysis and basic automation techniques.
-
-=======
 print("=== Failed Login Attempts ===")
 
 for ip, count in failed_attempts.items():
@@ -184,10 +134,6 @@ python3 log_analyzer.py
 ```
 
 ---
-
-
----
-
 
 ## 📊 Output Example
 
@@ -240,4 +186,4 @@ This project simulates a real-world SOC scenario where brute-force attacks are d
 
 **Atul Paswan**
 Cybersecurity Enthusiast | SOC Analyst Learner
->>>>>>> 594689dd3fb1539470f41bb2b38fcaf791e012d6
+
