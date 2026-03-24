@@ -157,6 +157,22 @@ python3 log_analyzer.py
 | Severity        | Medium             |
 
 ---
+## 📸 Screenshots
+
+### 🔹 Log Analysis
+![Log Analysis](screenshots/step1-log.png)
+
+### 🔹 Command Execution
+![Command](screenshots/step2-command.png)
+
+### 🔹 Final Output
+![Output](screenshots/final-output.png)
+
+
+
+
+
+
 
 ## 🎯 Key Takeaways
 
