@@ -1,4 +1,4 @@
-# 🛡️ SOC Day 1 – Linux Log Analysis (Brute Force Detection)
+# 🛡️ SOC Project 1 – Linux Log Analysis (Brute Force Detection)
 
 ## 📌 Project Overview
 
